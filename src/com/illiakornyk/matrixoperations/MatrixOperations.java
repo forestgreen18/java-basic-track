@@ -16,8 +16,22 @@ public class MatrixOperations {
         this.studentId = studentId;
     }
 
+    public void calculateCValues() {
+        int C5 = studentId % 5;
+        int C7 = studentId % 7;
+        int C11 = studentId % 11;
+
+
+        System.out.println("C5 (studentId % 5): " + C5);
+        System.out.println("C7 (studentId % 7): " + C7);
+        System.out.println("C11 (studentId % 11): " + C11);
+    }
+
     public static void main(String[] args) {
-        MatrixOperations matrixOps = new MatrixOperations(8); // Set studentId
-        System.out.println("Order number: " + matrixOps.getStudentId()); // Get studentId
+        MatrixOperations matrixOps = new MatrixOperations(8);
+        System.out.println("Order number: " + matrixOps.getStudentId());
+
+
+        matrixOps.calculateCValues();
     }
 }
