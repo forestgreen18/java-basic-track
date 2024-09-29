@@ -21,6 +21,10 @@ public class MatrixOperations {
         int C7 = studentId % 7;
         int C11 = studentId % 11;
 
+        System.out.println("C5 (studentId % 5): " + C5);
+        System.out.println("C7 (studentId % 7): " + C7);
+        System.out.println("C11 (studentId % 11): " + C11);
+
         performBitwiseXor();
     }
 
@@ -33,21 +37,21 @@ public class MatrixOperations {
 
 
     private void performBitwiseXor() {
-        int[][] A = {
+        byte[][] A = {
                 {1, 2},
                 {3, 4}
         };
 
-        int[][] B = {
+        byte[][] B = {
                 {5, 6},
                 {7, 8}
         };
 
-        int[][] C = new int[A.length][A[0].length];
+        byte[][] C = new byte[A.length][A[0].length];
 
         for (int i = 0; i < A.length; i++) {
             for (int j = 0; j < A[i].length; j++) {
-                C[i][j] = A[i][j] ^ B[i][j];
+                C[i][j] = (byte) (A[i][j] ^ B[i][j]);
             }
         }
 
@@ -55,9 +59,9 @@ public class MatrixOperations {
         printMatrix(C);
     }
 
-    private void printMatrix(int[][] matrix) {
-        for (int[] row : matrix) {
-            for (int value : row) {
+    private void printMatrix(byte[][] matrix) {
+        for (byte[] row : matrix) {
+            for (byte value : row) {
                 System.out.print(value + " ");
             }
             System.out.println();
