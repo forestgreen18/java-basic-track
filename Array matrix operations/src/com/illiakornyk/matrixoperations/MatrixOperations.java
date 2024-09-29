@@ -50,13 +50,6 @@ public class MatrixOperations {
         }
     }
 
-    public static void main(String[] args) {
-        MatrixOperations matrixOps = new MatrixOperations(8);
-        System.out.println("Order number: " + matrixOps.getStudentId());
-
-        matrixOps.calculateCValues();
-    }
-
     private void performBitwiseXor() throws Exception {
         if (A.length != B.length || A[0].length != B[0].length) {
             throw new Exception("Matrices A and B must have the same dimensions");
