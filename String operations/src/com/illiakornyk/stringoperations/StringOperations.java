@@ -1,6 +1,8 @@
 package com.illiakornyk.stringoperations;
 
 
+import java.util.*;
+
 public class StringOperations {
 
     private int studentId;
@@ -17,6 +19,16 @@ public class StringOperations {
 
     public void setStudentId(int studentId) {
         this.studentId = studentId;
+    }
+
+    private int countOccurrences(String word, char targetLetter) {
+        int count = 0;
+        for (char c : word.toCharArray()) {
+            if (c == targetLetter) {
+                count++;
+            }
+        }
+        return count;
     }
 
 }
