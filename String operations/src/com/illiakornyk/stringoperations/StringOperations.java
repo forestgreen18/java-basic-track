@@ -25,7 +25,7 @@ public class StringOperations {
                 System.out.println("An error occurred: " + e.getMessage());
             }
         } else {
-            System.out.println("Значення C3 і C17 не відповідають необхідним умовам для виконання операції.");
+            System.out.println("The values C3 and C17 do not meet the required conditions for the operation.");
         }
     }
 
@@ -42,9 +42,9 @@ public class StringOperations {
         List<String> sortedWords = new ArrayList<>(wordFrequencyMap.keySet());
         sortedWords.sort(Comparator.comparingInt(wordFrequencyMap::get));
 
-        System.out.println("Слова, відсортовані за частотою літери '" + targetLetter + "':");
+        System.out.println("Words sorted by letter frequency '" + targetLetter + "':");
         for (String word : sortedWords) {
-            System.out.println(word + " (Частота: " + wordFrequencyMap.get(word) + ")");
+            System.out.println(word + " (Frequency: " + wordFrequencyMap.get(word) + ")");
         }
     }
 
