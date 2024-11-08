@@ -48,11 +48,13 @@ public class StringOperations {
 
     private int countOccurrences(String word, char targetLetter) {
         int count = 0;
-        for (char c : word.toCharArray()) {
-            if (c == targetLetter) {
+        char lowerCaseTarget = Character.toLowerCase(targetLetter);
+        for (char c : word.toLowerCase().toCharArray()) { // Convert each character to lowercase
+            if (c == lowerCaseTarget) {
                 count++;
             }
         }
         return count;
     }
+
 }
