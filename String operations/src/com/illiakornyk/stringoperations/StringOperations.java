@@ -29,7 +29,8 @@ public class StringOperations {
     }
 
     private void sortWordsByLetterFrequency() {
-        String[] words = textBuffer.toString().split("\\s+");
+        String text = textBuffer.toString();
+        String[] words = text.split("\\s+");
         Map<String, Integer> wordFrequencyMap = new HashMap<>();
 
         for (String word : words) {
@@ -49,12 +50,11 @@ public class StringOperations {
     private int countOccurrences(String word, char targetLetter) {
         int count = 0;
         char lowerCaseTarget = Character.toLowerCase(targetLetter);
-        for (char c : word.toLowerCase().toCharArray()) { // Convert each character to lowercase
+        for (char c : word.toLowerCase().toCharArray()) {
             if (c == lowerCaseTarget) {
                 count++;
             }
         }
         return count;
     }
-
 }
