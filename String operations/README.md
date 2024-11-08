@@ -1,4 +1,4 @@
-# Matrix Operations
+# String Operations
 
 Цей проєкт є завданням до лабораторної роботи #2 в рамках курсу Java Basic Track. Він реалізує операції над рядками на мові Java.
 
