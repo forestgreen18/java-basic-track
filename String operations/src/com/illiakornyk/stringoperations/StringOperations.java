@@ -20,6 +20,10 @@ public class StringOperations {
 
         if (C3 == 2 && C17 == 8) {
             try {
+                if (textBuffer == null || textBuffer.length() == 0) {
+                    System.out.println("Text is empty. No operation performed.");
+                    return;
+                }
                 sortWordsByLetterFrequency();
             } catch (Exception e) {
                 System.out.println("An error occurred: " + e.getMessage());
@@ -41,6 +45,13 @@ public class StringOperations {
 
         List<String> sortedWords = new ArrayList<>(wordFrequencyMap.keySet());
         sortedWords.sort(Comparator.comparingInt(wordFrequencyMap::get));
+
+        boolean hasTargetLetter = sortedWords.stream().anyMatch(word -> wordFrequencyMap.get(word) > 0);
+
+        if (!hasTargetLetter) {
+            System.out.println("No words contain the letter '" + targetLetter + "'.");
+            return;
+        }
 
         System.out.println("Words sorted by letter frequency '" + targetLetter + "':");
         for (String word : sortedWords) {
