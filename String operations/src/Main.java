@@ -7,5 +7,9 @@ public class Main {
         String inputText = "This is an example text where we sort words based on letter frequency.";
 
         StringOperations stringOps = new StringOperations(studentId, inputText);
+
+        char targetLetter = 'e';
+
+        stringOps.performTextOperation(targetLetter);
     }
 }

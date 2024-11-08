@@ -21,7 +21,22 @@ public class StringOperations {
         this.studentId = studentId;
     }
 
+    public void performTextOperation(char targetLetter) {
+        int C17 = studentId % 17;
 
+        System.out.println("C3 (studentId % 3): " + (studentId % 3));
+        System.out.println("C17 (studentId % 17): " + C17);
+
+        try {
+            if (C17 == 8) {
+                sortWordsByLetterFrequency(targetLetter);
+            } else {
+                System.out.println("No specific operation defined for C17: " + C17);
+            }
+        } catch (Exception e) {
+            System.out.println("An error occurred: " + e.getMessage());
+        }
+    }
     private void sortWordsByLetterFrequency(char targetLetter) {
         String[] words = sfText.toString().split("\\s+");
         Map<String, Integer> wordFrequencyMap = new HashMap<>();
