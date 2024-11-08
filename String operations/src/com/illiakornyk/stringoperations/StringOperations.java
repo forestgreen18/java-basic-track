@@ -1,44 +1,35 @@
 package com.illiakornyk.stringoperations;
 
-
 import java.util.*;
 
 public class StringOperations {
 
-    private int studentId;
-    private StringBuffer sfText;
+    private int studentId = 8;
+    private StringBuffer textBuffer = new StringBuffer("Example text with various words to sort by frequency.");
+    private char targetLetter = 'e';
 
-    public StringOperations(int studentId, String inputText) {
-        this.studentId = studentId;
-        this.sfText = new StringBuffer(inputText);
-    }
+    public StringOperations() {}
 
-    public int getStudentId() {
-        return studentId;
-    }
-
-    public void setStudentId(int studentId) {
-        this.studentId = studentId;
-    }
-
-    public void performTextOperation(char targetLetter) {
+    public void performTextOperation() {
+        int C3 = studentId % 3;
         int C17 = studentId % 17;
 
-        System.out.println("C3 (studentId % 3): " + (studentId % 3));
+        System.out.println("C3 (studentId % 3): " + C3);
         System.out.println("C17 (studentId % 17): " + C17);
 
-        try {
-            if (C17 == 8) {
-                sortWordsByLetterFrequency(targetLetter);
-            } else {
-                System.out.println("No specific operation defined for C17: " + C17);
+        if (C3 == 2 && C17 == 8) {
+            try {
+                sortWordsByLetterFrequency();
+            } catch (Exception e) {
+                System.out.println("An error occurred: " + e.getMessage());
             }
-        } catch (Exception e) {
-            System.out.println("An error occurred: " + e.getMessage());
+        } else {
+            System.out.println("Значення C3 і C17 не відповідають необхідним умовам для виконання операції.");
         }
     }
-    private void sortWordsByLetterFrequency(char targetLetter) {
-        String[] words = sfText.toString().split("\\s+");
+
+    private void sortWordsByLetterFrequency() {
+        String[] words = textBuffer.toString().split("\\s+");
         Map<String, Integer> wordFrequencyMap = new HashMap<>();
 
         for (String word : words) {
@@ -49,12 +40,11 @@ public class StringOperations {
         List<String> sortedWords = new ArrayList<>(wordFrequencyMap.keySet());
         sortedWords.sort(Comparator.comparingInt(wordFrequencyMap::get));
 
-        System.out.println("Words sorted by frequency of letter '" + targetLetter + "':");
+        System.out.println("Слова, відсортовані за частотою літери '" + targetLetter + "':");
         for (String word : sortedWords) {
-            System.out.println(word + " (Frequency: " + wordFrequencyMap.get(word) + ")");
+            System.out.println(word + " (Частота: " + wordFrequencyMap.get(word) + ")");
         }
     }
-
 
     private int countOccurrences(String word, char targetLetter) {
         int count = 0;
@@ -65,5 +55,4 @@ public class StringOperations {
         }
         return count;
     }
-
 }
