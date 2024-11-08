@@ -1,4 +1,3 @@
-
 import com.illiakornyk.stringoperations.StringOperations;
 
 public class Main {

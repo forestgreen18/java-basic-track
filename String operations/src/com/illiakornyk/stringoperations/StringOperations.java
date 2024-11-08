@@ -8,7 +8,8 @@ public class StringOperations {
     private StringBuffer textBuffer = new StringBuffer("Example text with various words to sort by frequency.");
     private char targetLetter = 'e';
 
-    public StringOperations() {}
+    public StringOperations() {
+    }
 
     public void performTextOperation() {
         int C3 = studentId % 3;
