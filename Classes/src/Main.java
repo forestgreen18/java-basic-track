@@ -22,5 +22,17 @@ public class Main {
             System.out.println(student);
         }
 
+        // Define the target student to find in the array
+        Student target = new Student("Charlie", 21, 103, 3.2, "Physics");
+
+        // Search for the target student
+        boolean found = Arrays.asList(students).contains(target);
+
+        if (found) {
+            System.out.println("\nThe specified student was found in the array.");
+        } else {
+            System.out.println("\nThe specified student was not found in the array.");
+        }
+
     }
 }

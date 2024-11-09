@@ -48,4 +48,21 @@ public class Student {
                 Objects.equals(major, student.major);
     }
 
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, age, studentId, gpa, major);
+    }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", studentId=" + studentId +
+                ", gpa=" + gpa +
+                ", major='" + major + '\'' +
+                '}';
+    }
+
 }
