@@ -1,4 +1,5 @@
 package com.illiakornyk.student;
+
 import java.util.Objects;
 
 public class Student {
@@ -39,14 +40,12 @@ public class Student {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof Student)) return false;
-        Student student = (Student) o;
+        if (!(o instanceof Student student)) return false;
         return age == student.age &&
                 studentId == student.studentId &&
                 Double.compare(student.gpa, gpa) == 0 &&
                 Objects.equals(name, student.name) &&
                 Objects.equals(major, student.major);
     }
-
 
 }
