@@ -4,11 +4,14 @@ import java.util.*;
 
 public class StringOperations {
 
-    private int studentId = 8;
-    private StringBuffer textBuffer = new StringBuffer("Example text with various words to sort by frequency.");
-    private char targetLetter = 'e';
+    private int studentId;
+    private StringBuffer textBuffer;
+    private char targetLetter;
 
-    public StringOperations() {
+    public StringOperations(int studentId, StringBuffer textBuffer, char targetLetter) {
+        this.studentId = studentId;
+        this.textBuffer = textBuffer;
+        this.targetLetter = targetLetter;
     }
 
     public void performTextOperation() {
