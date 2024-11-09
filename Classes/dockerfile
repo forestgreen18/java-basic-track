@@ -1,0 +1,20 @@
+# Set the base image
+FROM openjdk:23
+
+# Set build arguments for package and class names
+ARG SRC_DIR=src
+ARG MAIN_CLASS=Main
+ARG STRING_PACKAGE=com/illiakornyk/student
+ARG STRING_CLASS=Student
+
+# Set the working directory
+WORKDIR /app
+
+# Copy source files
+COPY $SRC_DIR ./$SRC_DIR
+
+# Compile the Java files using the build arguments
+RUN javac $SRC_DIR/$MAIN_CLASS.java $SRC_DIR/$STRING_PACKAGE/$STRING_CLASS.java
+
+# Run the main class
+CMD ["java", "-cp", "src", "Main"]
