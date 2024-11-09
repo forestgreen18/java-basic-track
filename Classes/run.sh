@@ -3,8 +3,8 @@
 SRC_DIR="src"
 OUT_DIR="out"
 MAIN_CLASS="Main"
-STRING_PACKAGE="com/illiakornyk/stringoperations"
-STRING_CLASS="StringOperations"
+STRING_PACKAGE="com/illiakornyk/student"
+STRING_CLASS="Student"
 
 # Create output directory
 mkdir -p $OUT_DIR

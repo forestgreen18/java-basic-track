@@ -4,8 +4,8 @@ FROM openjdk:23
 # Set build arguments for package and class names
 ARG SRC_DIR=src
 ARG MAIN_CLASS=Main
-ARG STRING_PACKAGE=com/illiakornyk/stringoperations
-ARG STRING_CLASS=StringOperations
+ARG STRING_PACKAGE=com/illiakornyk/student
+ARG STRING_CLASS=Student
 
 # Set the working directory
 WORKDIR /app

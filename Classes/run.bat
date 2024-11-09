@@ -3,8 +3,8 @@
 set SRC_DIR=src
 set OUT_DIR=out
 set MAIN_CLASS=Main
-set STRING_PACKAGE=com\illiakornyk\stringoperations
-set STRING_CLASS=StringOperations
+set STRING_PACKAGE=com\illiakornyk\student
+set STRING_CLASS=Student
 
 if not exist %OUT_DIR% (
     mkdir %OUT_DIR%
