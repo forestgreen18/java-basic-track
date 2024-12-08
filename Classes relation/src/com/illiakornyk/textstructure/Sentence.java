@@ -10,10 +10,14 @@ public class Sentence {
         this.elements = new ArrayList<>();
         String[] tokens = sentence.split("(?=[,.!?])|\\s+"); // Split by punctuation or spaces
         for (String token : tokens) {
-            if (token.matches("\\p{Punct}")) {
-                elements.add(new Punctuation(token.charAt(0)));
-            } else if (!token.trim().isEmpty()) { // Exclude empty strings
-                elements.add(new Word(token));
+            if (!token.trim().isEmpty()) { // Ignore empty tokens
+                if (token.matches("\\p{Punct}+")) { // Match one or more punctuation characters
+                    for (char c : token.toCharArray()) { // Break into individual punctuation marks
+                        elements.add(new Punctuation(c));
+                    }
+                } else { // Treat as a word
+                    elements.add(new Word(token));
+                }
             }
         }
     }
