@@ -8,11 +8,11 @@ public class Sentence {
 
     public Sentence(String sentence) {
         this.elements = new ArrayList<>();
-        String[] tokens = sentence.split("(?=[,.!?])|\\s+");
+        String[] tokens = sentence.split("(?=[,.!?])|\\s+"); // Split by punctuation or spaces
         for (String token : tokens) {
             if (token.matches("\\p{Punct}")) {
                 elements.add(new Punctuation(token.charAt(0)));
-            } else {
+            } else if (!token.trim().isEmpty()) { // Exclude empty strings
                 elements.add(new Word(token));
             }
         }

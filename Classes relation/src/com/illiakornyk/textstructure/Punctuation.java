@@ -1,5 +1,7 @@
 package com.illiakornyk.textstructure;
 
+import java.util.Map;
+
 public class Punctuation {
     private char symbol;
 
@@ -15,4 +17,6 @@ public class Punctuation {
     public String toString() {
         return String.valueOf(symbol);
     }
+
+
 }
