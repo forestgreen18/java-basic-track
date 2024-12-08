@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7783dd5f-4793-4194-b6b7-36d9a3d3973f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/illiakornyk/textstructure/Punctuation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/illiakornyk/textstructure/Word.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/illiakornyk/textstructure/Sentence.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/illiakornyk/textstructure/Text.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
