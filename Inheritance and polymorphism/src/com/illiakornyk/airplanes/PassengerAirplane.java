@@ -10,6 +10,9 @@ public class PassengerAirplane extends Airplane {
 
     @Override
     public String toString() {
-        return super.toString() + ", Passenger Capacity: " + passengerCapacity;
+        return super.toString() +
+                ", Passenger Capacity: " + passengerCapacity +
+                " seats (Total Capacity: " + getTotalCapacity() +
+                ", Carrying Capacity: " + getCarryingCapacity() + " tonnes)";
     }
 }

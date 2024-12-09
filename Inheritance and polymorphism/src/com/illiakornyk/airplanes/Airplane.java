@@ -2,14 +2,14 @@ package com.illiakornyk.airplanes;
 
 public abstract class Airplane {
     private String model;
-    private double capacity;
+    private double totalCapacity;
     private double carryingCapacity;
     private double flightRange;
     private double fuelConsumption;
 
-    public Airplane(String model, double capacity, double carryingCapacity, double flightRange, double fuelConsumption) {
+    public Airplane(String model, double totalCapacity, double carryingCapacity, double flightRange, double fuelConsumption) {
         this.model = model;
-        this.capacity = capacity;
+        this.totalCapacity = totalCapacity;
         this.carryingCapacity = carryingCapacity;
         this.flightRange = flightRange;
         this.fuelConsumption = fuelConsumption;
@@ -25,7 +25,7 @@ public abstract class Airplane {
 
     @Override
     public String toString() {
-        return "Model: " + model + ", Capacity: " + capacity + ", Carrying Capacity: " + carryingCapacity +
+        return "Model: " + model + ", Capacity: " + totalCapacity + ", Carrying Capacity: " + carryingCapacity +
                 ", Flight Range: " + flightRange + ", Fuel Consumption: " + fuelConsumption;
     }
 
@@ -33,7 +33,7 @@ public abstract class Airplane {
         return carryingCapacity;
     }
 
-    public double getCapacity() {
-        return capacity;
+    public double getTotalCapacity() {
+        return totalCapacity;
     }
 }
