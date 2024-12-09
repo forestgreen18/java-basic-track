@@ -1,4 +1,4 @@
-# Classes relation
+# Inheritance and polymorphism
 
 Цей проєкт є завданням до лабораторної роботи №5 в рамках курсу Java Basic Track. Він реалізує наслідування та поліморфізм в мові програмування Java.
 
