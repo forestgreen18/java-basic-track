@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Word {
-    private List<Letter> letters;
+    private final List<Letter> letters;
 
     public Word(String word) {
         this.letters = new ArrayList<>();

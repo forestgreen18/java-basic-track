@@ -1,13 +1,16 @@
 package com.illiakornyk.stringoperations;
 
-import com.illiakornyk.textstructure.*;
+import com.illiakornyk.textstructure.Letter;
+import com.illiakornyk.textstructure.Sentence;
+import com.illiakornyk.textstructure.Text;
+import com.illiakornyk.textstructure.Word;
 
 import java.util.*;
 
 public class StringOperations {
-    private int studentId;
-    private Text text;
-    private char targetLetter;
+    private final int studentId;
+    private final Text text;
+    private final char targetLetter;
 
     public StringOperations(int studentId, String rawText, char targetLetter) {
         this.studentId = studentId;
@@ -18,6 +21,16 @@ public class StringOperations {
         this.text = new Text(cleanedText);
     }
 
+    /**
+     * Performs a text operation based on the student's ID modulo calculations.
+     * <p>
+     * If the conditions (C3 == 2 and C17 == 8) are met, it checks if the text is empty.
+     * If the text is non-empty, it proceeds to sort the words in the text by the frequency
+     * of the target letter. If the conditions are not met, or if an error occurs, an appropriate
+     * message is printed.
+     * <p>
+     * This method relies on the studentId and text fields of the class.
+     */
     public void performTextOperation() {
         int C3 = studentId % 3;
         int C17 = studentId % 17;
@@ -40,11 +53,16 @@ public class StringOperations {
         }
     }
 
+    /**
+     * Sorts all words in the given text by frequency of the target letter.
+     * Prints out the sorted words in descending order of frequency, with the frequency of each word.
+     * If no words contain the target letter, prints a message to that effect.
+     */
     private void sortWordsByLetterFrequency() {
         List<Word> allWords = new ArrayList<>();
         for (Sentence sentence : text.getSentences()) {
             for (Object element : sentence.getElements()) {
-                if (element instanceof Word) { // Include only Word objects
+                if (element instanceof Word) {
                     allWords.add((Word) element);
                 }
             }

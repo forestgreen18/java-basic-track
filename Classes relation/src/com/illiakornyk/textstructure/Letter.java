@@ -1,7 +1,7 @@
 package com.illiakornyk.textstructure;
 
 public class Letter {
-    private char character;
+    private final char character;
 
     public Letter(char character) {
         this.character = character;

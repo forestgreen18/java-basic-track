@@ -6,7 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="7783dd5f-4793-4194-b6b7-36d9a3d3973f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/illiakornyk/stringoperations/StringOperations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/illiakornyk/stringoperations/StringOperations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/illiakornyk/textstructure/Letter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/illiakornyk/textstructure/Letter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/illiakornyk/textstructure/Punctuation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/illiakornyk/textstructure/Punctuation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/illiakornyk/textstructure/Sentence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/illiakornyk/textstructure/Sentence.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/illiakornyk/textstructure/Text.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/illiakornyk/textstructure/Text.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/illiakornyk/textstructure/Word.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/illiakornyk/textstructure/Word.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,10 +28,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 6
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2pxB2LMtZ6AjTdpE4J9s8mWoRzN" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -37,7 +42,8 @@
     "Application.Main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "lab4/classes-relation",
-    "kotlin-language-version-configured": "true"
+    "kotlin-language-version-configured": "true",
+    "run.code.analysis.last.selected.profile": "pProject Default"
   }
 }]]></component>
   <component name="RunManager">

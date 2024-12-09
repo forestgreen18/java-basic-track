@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Text {
-    private List<Sentence> sentences;
+    private final List<Sentence> sentences;
 
     public Text(String text) {
         this.sentences = new ArrayList<>();

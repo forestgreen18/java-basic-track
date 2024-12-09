@@ -1,9 +1,8 @@
 package com.illiakornyk.textstructure;
 
-import java.util.Map;
 
 public class Punctuation {
-    private char symbol;
+    private final char symbol;
 
     public Punctuation(char symbol) {
         this.symbol = symbol;
