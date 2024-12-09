@@ -36,8 +36,7 @@ public class Main {
         airline.sortByFlightRange();
         System.out.println("\nFleet Sorted by Flight Range:\n" + airline);
 
-        // Find airplane by fuel consumption range
-        double minFuel = 0.5, maxFuel = 3.0; // Adjusted range for liters/km
+        double minFuel = 0.5, maxFuel = 3.0;
         Airplane matchedAirplane = airline.findByFuelConsumptionRange(minFuel, maxFuel);
         if (matchedAirplane != null) {
             System.out.println("\nAirplane matching fuel consumption range (" + minFuel + " - " + maxFuel + "):");
