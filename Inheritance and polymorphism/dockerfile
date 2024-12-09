@@ -1,0 +1,19 @@
+# Set the base image
+FROM openjdk:23
+
+# Set build arguments for source directory and main class
+ARG SRC_DIR=src
+ARG OUT_DIR=out
+ARG MAIN_CLASS=Main
+
+# Set the working directory
+WORKDIR /app
+
+# Copy the entire source directory into the container
+COPY $SRC_DIR ./$SRC_DIR
+
+# Compile all Java files in the source directory
+RUN javac -encoding UTF-8 -d $OUT_DIR -sourcepath $SRC_DIR $SRC_DIR/$MAIN_CLASS.java
+
+# Set the classpath to the compiled output directory and run the main class
+CMD ["java", "-cp", "out", "Main"]
