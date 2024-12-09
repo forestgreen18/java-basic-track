@@ -28,4 +28,12 @@ public abstract class Airplane {
         return "Model: " + model + ", Capacity: " + capacity + ", Carrying Capacity: " + carryingCapacity +
                 ", Flight Range: " + flightRange + ", Fuel Consumption: " + fuelConsumption;
     }
+
+    public double getCarryingCapacity() {
+        return carryingCapacity;
+    }
+
+    public double getCapacity() {
+        return capacity;
+    }
 }
