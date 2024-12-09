@@ -16,8 +16,11 @@
 - [Лабораторна робота #4: Відношеннями між класами в мові програмування Java](https://github.com/forestgreen18/java-basic-track/tree/main/Classes%20relation)
   Ця лабораторна робота реалізує відношеннями між класами в мові програмування Java.
 
-- [Лабораторна робота #5: Відношеннями між класами в мові програмування Java](https://github.com/forestgreen18/java-basic-track/tree/main/Inheritance%20and%20polymorphism)
+- [Лабораторна робота #5: Наслідування та поліморфізм в мові програмування Java](https://github.com/forestgreen18/java-basic-track/tree/main/Inheritance%20and%20polymorphism)
   Ця лабораторна робота реалізує наслідування та поліморфізм в мові програмування Java.
+
+- [Лабораторна робота #6: Робота з колекціями в мові програмування Java](https://github.com/forestgreen18/java-basic-track/tree/main/Collections)
+  Ця лабораторна робота реалізує створення власних та використанні стандартних колекцій в мові програмування Java.
 
 ## Студент
 
